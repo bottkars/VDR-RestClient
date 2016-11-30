@@ -26,11 +26,18 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
-  <ItemGroup />
   <ItemGroup>
+    <Folder Include="functions\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="functions\VDR-RestClient_private.psm1" />
     <Compile Include="VDR-RestClient.psd1" />
+    <Compile Include="functions\VDR-RestClient_info.psm1" />
     <Compile Include="VDR-RestClient.psm1" />
     <Compile Include="VDR-RestClient.tests.ps1" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="README.md" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Target Name="Build" />
