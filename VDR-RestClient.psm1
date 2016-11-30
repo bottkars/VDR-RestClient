@@ -3,6 +3,7 @@
 #>
 function Connect-VDRAPI
 {
+	[CmdletBinding()]
 	param (    
     [Parameter(ParameterSetName = "by_ip", Mandatory = $true)][system.net.ipaddress]$vdr_ip,
     [Parameter(ParameterSetName = "by_name", Mandatory = $true )][string]$vdr_name,
@@ -26,9 +27,13 @@ switch ($PsCmdlet.ParameterSetName)
 
 $private:uri = "$global:vdr_base_url/info.json"
 $global:vdr_info_uri = $private:uri
+$global:vdr_recordings_uri = "$global:vdr_base_url/recordings.json"
+$global:vdr_remote_uri = "$global:vdr_base_url/remote"
+$global:vdr_channels_uri = "$global:vdr_base_url/channels.json"
+
 try
 	{
-	$myinfo = invoke-restcall -uri $uri
+	$myinfo = invoke-restcall -uri $uri -Verbose:($PSBoundParameters['Verbose'] -eq $true)
 	}
 catch
 	{

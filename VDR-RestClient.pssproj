@@ -30,6 +30,9 @@
     <Folder Include="functions\" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="functions\VDR-RestClient_channels.psm1" />
+    <Compile Include="functions\VDR-RestClient_remote.psm1" />
+    <Compile Include="functions\VDR-RestClient_recordings.psm1" />
     <Compile Include="functions\VDR-RestClient_private.psm1" />
     <Compile Include="VDR-RestClient.psd1" />
     <Compile Include="functions\VDR-RestClient_info.psm1" />
