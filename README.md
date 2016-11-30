@@ -46,5 +46,8 @@ Current Supported Function are basic get commands to get Basig information from 
 
 ##examples:
 
+![image](https://cloud.githubusercontent.com/assets/8255007/20747773/a84b4834-b6eb-11e6-9c0f-44a82bd21258.png)
+
+
 
 
