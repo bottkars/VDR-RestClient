@@ -40,3 +40,11 @@ version services
 0.2.6.5 {@{path=/info; version=1}, @{path=/channels; version=1}, @{path=/channels/groups; version=1}, @{path=/channels/image; version=1}...}
 
 ```
+Once the Connect-VDRAPI Call is done, the Scope to the RestAPI URI is set GLobally for all other calls
+
+Current Supported Function are basic get commands to get Basig information from the API
+
+##examples:
+
+
+
