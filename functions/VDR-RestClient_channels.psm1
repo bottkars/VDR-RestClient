@@ -14,9 +14,8 @@ catch
 	Write-Host "something went wrong"
 	}
 #$myinfo.vdr.$private:function | Add-Member -TypeName "VDR$($private:function)"
-$myinfo.$private:function 
-}
-
-
+$myinfo.$private:function | Add-Member -TypeName "VDR$($private:function)"
+Write-Output $myinfo.$private:function
+} 
 
 
